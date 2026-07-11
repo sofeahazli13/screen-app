@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
+        VStack{
+            ZStack {
             Color.teal
             Text("Sofea")
                 .foregroundStyle(.white)
@@ -17,7 +18,17 @@ struct ContentView: View {
                 .bold()
         }
         .ignoresSafeArea()
+            ZStack {
+            Color.teal
+            Text("Suang Zhi")
+                .foregroundStyle(.white)
+                .font(.largeTitle)
+                .bold()
+        }
+        .ignoresSafeArea()
+        }
     }
+    
 }
 
 #Preview {
